@@ -1,0 +1,69 @@
+{
+  "Black_Rust": {
+    "name": "Wheat - Black Rust (Stem Rust)",
+    "cause": "Fungus: Puccinia graminis f. sp. tritici",
+    "symptoms": "Dark brown to black raised pustules on stems and leaf sheaths, reddish-brown spores released when pustules rupture. Leaves may yellow and wither.",
+    "treatment": "Plant resistant varieties. Apply triazole-based fungicides (propiconazole, tebuconazole) at first sign. Remove volunteer wheat and alternate grass hosts. Avoid late sowing."
+  },
+  "Flag_Smut": {
+    "name": "Wheat - Flag Smut",
+    "cause": "Fungus: Urocystis tritici",
+    "symptoms": "Long, dark, longitudinal streaks on leaves (especially the flag leaf), leaf sheaths, and stems. Affected leaves may curl and shred. Severely infected plants are stunted.",
+    "treatment": "Use smut-free certified seed. Treat seed with carboxin or thiram-based fungicide. Remove and destroy infected plants. Rotate away from wheat for 2-3 years."
+  },
+  "Foot_Rot": {
+    "name": "Wheat - Foot Rot (Crown Rot)",
+    "cause": "Fungus: Fusarium culmorum / Fusarium pseudograminearum",
+    "symptoms": "Browning and necrosis of the stem base (crown), whiteheads appearing prematurely, reduced tillering, and lodge-prone stems.",
+    "treatment": "Rotate with non-cereals for at least 2 years. Avoid excess irrigation. Apply seed fungicide (tebuconazole + fludioxonil). Remove crop residues."
+  },
+  "Hill_Bunt_Common_Bunt": {
+    "name": "Wheat - Hill Bunt / Common Bunt (Loose Smut complex)",
+    "cause": "Fungus: Tilletia caries (Common Bunt) / Tilletia laevis (Stinking Smut)",
+    "symptoms": "Bunt balls replacing grain kernels inside the spike, emitting a strong fishy odor when broken open. Ears may appear silvery-grey before rupture.",
+    "treatment": "Use certified bunt-free seed. Treat seed with carboxin-thiram or difenoconazole. Sow resistant varieties. Deep plowing to bury infected debris."
+  },
+  "Leaf_Blight": {
+    "name": "Wheat - Leaf Blight",
+    "cause": "Fungus: Alternaria triticina / Bipolaris sorokiniana",
+    "symptoms": "Small, oval, light-brown to dark lesions on leaves with concentric rings. Lesions coalesce causing large necrotic patches and premature leaf drying.",
+    "treatment": "Apply foliar fungicide (mancozeb or propiconazole) at early symptom appearance. Ensure balanced nitrogen fertilization. Avoid overhead irrigation. Use resistant varieties."
+  },
+  "Leaf_Rust": {
+    "name": "Wheat - Leaf Rust (Brown Rust)",
+    "cause": "Fungus: Puccinia triticina",
+    "symptoms": "Small, round to oval, orange-brown pustules scattered on upper leaf surfaces. Leaves yellow and dry from tip downward in severe infection.",
+    "treatment": "Plant resistant/tolerant varieties. Apply triazole or strobilurin fungicides when disease threshold is reached. Avoid early sowing in high-risk zones."
+  },
+  "Loose_Smut": {
+    "name": "Wheat - Loose Smut",
+    "cause": "Fungus: Ustilago tritici",
+    "symptoms": "Entire ear replaced by a mass of black, powdery spores enclosed in a thin membrane that ruptures at flowering. Stalks may be affected. No grain produced in infected ears.",
+    "treatment": "Use systemic seed treatments (carboxin-thiram or tebuconazole). Sow resistant varieties. Remove infected heads before spores disperse."
+  },
+  "Powdery_Mildew": {
+    "name": "Wheat - Powdery Mildew",
+    "cause": "Fungus: Blumeria graminis f. sp. tritici",
+    "symptoms": "White to grey powdery patches on upper leaf surfaces, stems, and leaf sheaths. Heavily infected leaves turn yellow and may die.",
+    "treatment": "Apply triazole-based fungicides (propiconazole, tebuconazole) at first sign. Plant resistant varieties. Avoid dense planting and excessive nitrogen."
+  },
+  "Wheat_Blast": {
+    "name": "Wheat - Blast (Magnaporthe oryzae pathotype Triticum)",
+    "cause": "Fungus: Magnaporthe oryzae (Triticum pathotype)",
+    "symptoms": "Bleached lesions at the spike base, causing partial or complete sterility of the spike (blank ears). Leaf lesions are diamond-shaped with grey centers.",
+    "treatment": "No fully effective chemical control exists. Plant blast-resistant varieties. Avoid excessive nitrogen and late planting. Ensure adequate field drainage. Use tricyclazole as a preventive measure."
+  },
+  "Yellow_Rust": {
+    "name": "Wheat - Yellow Rust (Stripe Rust)",
+    "cause": "Fungus: Puccinia striiformis f. sp. tritici",
+    "symptoms": "Yellow-orange pustules arranged in long stripes along leaf veins. Severe infection causes leaves to dry up. Favored by cool, humid conditions.",
+    "treatment": "Use resistant varieties suited to your region. Apply fungicides (propiconazole, tebuconazole) at early stripe appearance. Remove alternate hosts. Avoid late sowing in rust-prone areas."
+  },
+  "Wheat_Healthy": {
+    "name": "Wheat - Healthy",
+    "cause": "N/A",
+    "symptoms": "No visible disease symptoms. Leaves are uniformly green with normal growth and grain filling.",
+    "treatment": "Continue regular scouting. Maintain balanced fertilization, proper irrigation schedule, and crop rotation to prevent future disease outbreaks."
+  },
+  "_comment": "Wheat disease classes for Fasal Rakshak. Keys must exactly match folder names in backend/known_images/."
+}

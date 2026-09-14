@@ -1,0 +1,6 @@
+{
+  "name": "Fasal Rakshak",
+  "description": "Regional agricultural pest and blight forecast network providing predictive early warnings before symptoms arrive.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
