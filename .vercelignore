@@ -1,0 +1,9 @@
+# Frontend-only deployment — the FastAPI backend is excluded here.
+# It is deployed separately (Render / Railway / Hugging Face Spaces),
+# because TensorFlow exceeds Vercel's serverless bundle limit.
+backend/
+training/
+model/
+.git/
+.gitignore
+*.log
