@@ -340,7 +340,7 @@ export const CheckCropScreen: React.FC<CheckCropScreenProps> = ({ lang, onNaviga
                       <p className="font-sans-brand text-[#575246] leading-relaxed">
                         Similarity: {Object.entries(prediction.similarities)
                           .slice(0, 3)
-                          .map(([cls, s]) => `${cls} ${(s * 100).toFixed(0)}%`)
+                          .map(([cls, s]) => `${cls} ${((s as number) * 100).toFixed(0)}%`)
                           .join(' · ')}
                       </p>
                     )}

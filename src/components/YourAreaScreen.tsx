@@ -8,6 +8,7 @@ import {
   SharedSectionHeader,
   SharedListRow
 } from './common/SharedPatterns';
+import { AreaRiskMap } from './AreaRiskMap';
 
 interface YourAreaScreenProps {
   lang: Language;
@@ -58,6 +59,9 @@ export const YourAreaScreen: React.FC<YourAreaScreenProps> = ({
           {showEmptyState ? t.myArea.riskLowNotice : t.myArea.riskRisingNotice}
         </p>
       </div>
+
+      {/* Map card — introduces the Nearby Reports list below */}
+      <AreaRiskMap lang={lang} isEmpty={showEmptyState} />
 
       {/* One Card containing the list group (Shared Card pattern) */}
       <SharedCard id="your-area-reports-card" className="mb-8">

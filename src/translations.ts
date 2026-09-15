@@ -48,6 +48,8 @@ export interface Translations {
     riskLowNotice: string;
     emptyState: string;
     reportsHeading: string;
+    mapHead: string;
+    mapHint: string;
     report1: {
       issue: string;
       detail: string;
@@ -123,6 +125,8 @@ export const TRANSLATIONS: Record<Language, Translations> = {
       riskLowNotice: 'Weather is currently favorable and pest pressure is within safe thresholds.',
       emptyState: 'No outbreaks reported nearby right now.',
       reportsHeading: 'Recent Local Reports',
+      mapHead: 'Affected Area Map',
+      mapHint: 'Tap a district or marker for details.',
       report1: {
         issue: 'Pink Bollworm on Cotton',
         detail: '3km away, reported 2 days ago'
@@ -196,6 +200,8 @@ export const TRANSLATIONS: Record<Language, Translations> = {
         riskLowNotice: 'वर्तमान में मौसम अनुकूल है और कीटों का दबाव सामान्य सीमा में है।',
         emptyState: 'वर्तमान में आसपास किसी नए प्रकोप की सूचना नहीं है।',
         reportsHeading: 'क्षेत्र की हालिया गतिविधियां',
+        mapHead: 'प्रभावित क्षेत्रों का नक्शा',
+        mapHint: 'विवरण के लिए जिले या मार्कर पर टैप करें।',
         report1: {
           issue: 'कपास पर गुलाबी सुंडी',
           detail: '3 किमी दूर, 2 दिन पहले दर्ज'
@@ -269,6 +275,8 @@ export const TRANSLATIONS: Record<Language, Translations> = {
         riskLowNotice: 'सध्या हवामान सुरक्षित असून किडींचा प्रादुर्भाव नियंत्रणात आहे.',
         emptyState: 'सध्या परिसरात कोणताही प्रादुर्भाव नोंदवलेला नाही.',
         reportsHeading: 'परिसरातील ताज्या नोंदी',
+        mapHead: 'प्रादुर्भाव क्षेत्रांचा नकाशा',
+        mapHint: 'माहितीसाठी जिल्हा किंवा मार्करवर टॅप करा.',
         report1: {
           issue: 'कापसावर गुलाबी बोंडअळी',
           detail: '3 किमी अंतरावर, 2 दिवसांपूर्वी नोंदवले'

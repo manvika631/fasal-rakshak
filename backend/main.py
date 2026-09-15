@@ -35,6 +35,7 @@ from PIL import Image
 IMG_SIZE = (224, 224)
 ALLOWED_ORIGINS = [
     "https://sih-fasal-rakshak.vercel.app",
+    "https://fasal-rakshak-project.vercel.app",
     "http://localhost:3000",
     "http://localhost:5173",
 ]
