@@ -16,6 +16,7 @@ import { CheckCropScreen } from './components/CheckCropScreen';
 import { YourAreaScreen } from './components/YourAreaScreen';
 import { HowItWorksScreen } from './components/HowItWorksScreen';
 import { CommunityScreen } from './components/CommunityScreen';
+import { MyAccountScreen } from './components/MyAccountScreen';
 import { AuthModal } from './components/AuthModal';
 import { FieldSentinelModal } from './components/FieldSentinelModal';
 import { ReportObservationModal } from './components/ReportObservationModal';
@@ -28,6 +29,7 @@ export default function App() {
     if (path === '/community' || hash === '#community') return 'community';
     if (path === '/check-crop' || hash === '#check-crop') return 'check-crop';
     if (path === '/my-area' || hash === '#my-area') return 'my-area';
+    if (path === '/my-account' || hash === '#my-account') return 'my-account';
     if (path === '/how-it-works' || hash === '#how-it-works') return 'how-it-works';
     return 'home';
   };
@@ -177,6 +179,21 @@ export default function App() {
             <HowItWorksScreen
               onNavigate={handleNavigate}
               onOpenSentinel={() => setIsSentinelModalOpen(true)}
+            />
+          </div>
+        )}
+
+        {/* PAGE 5: MY ACCOUNT */}
+        {activeScreen === 'my-account' && (
+          <div className="animate-fadeIn w-full">
+            <MyAccountScreen
+              lang={lang}
+              currentUser={currentUser}
+              registeredField={registeredField}
+              onOpenAuth={() => setIsAuthModalOpen(true)}
+              onOpenSentinel={() => setIsSentinelModalOpen(true)}
+              onSignOut={handleLogout}
+              onNavigate={handleNavigate}
             />
           </div>
         )}

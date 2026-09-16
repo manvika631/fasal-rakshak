@@ -135,6 +135,19 @@ export const Header: React.FC<HeaderProps> = ({
               <span className="material-symbols-outlined text-[18px]">forum</span>
               <span>{t.community}</span>
             </button>
+
+            <button
+              id="nav-my-account"
+              onClick={() => handleNav('my-account')}
+              className={`font-sans-brand text-sm transition-colors cursor-pointer flex items-center gap-1.5 ${
+                activeScreen === 'my-account'
+                  ? 'text-secondary font-bold'
+                  : 'text-on-surface-variant hover:text-on-surface'
+              }`}
+            >
+              <span className="material-symbols-outlined text-[18px]">account_circle</span>
+              <span>{t.myAccount}</span>
+            </button>
           </nav>
 
           {/* User Auth indicator / button */}
@@ -142,7 +155,7 @@ export const Header: React.FC<HeaderProps> = ({
             <div className="flex items-center gap-2 pl-2 border-l border-white/10">
               <button
                 id="header-user-btn"
-                onClick={() => handleNav('community')}
+                onClick={() => handleNav('my-account')}
                 className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#231f15] border border-white/10 hover:border-secondary/40 text-xs font-sans-brand text-white cursor-pointer"
                 title={`${currentUser.name} (${currentUser.district})`}
               >
@@ -226,7 +239,7 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Mobile Auth Button */}
           {currentUser ? (
             <button
-              onClick={() => handleNav('community')}
+              onClick={() => handleNav('my-account')}
               className="text-sm p-1 rounded-full bg-[#231f15]"
             >
               {currentUser.avatar || '👨‍🌾'}
@@ -309,6 +322,13 @@ export const Header: React.FC<HeaderProps> = ({
           >
             <span>{t.community}</span>
             <span className="material-symbols-outlined text-[16px] text-secondary">forum</span>
+          </button>
+          <button
+            onClick={() => handleNav('my-account')}
+            className="w-full text-left py-2 font-sans-brand text-sm text-on-surface hover:text-secondary block flex items-center justify-between"
+          >
+            <span>{t.myAccount}</span>
+            <span className="material-symbols-outlined text-[16px] text-secondary">account_circle</span>
           </button>
         </div>
       )}

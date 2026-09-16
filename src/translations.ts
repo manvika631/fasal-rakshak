@@ -6,6 +6,7 @@ export interface Translations {
     checkCrop: string;
     myArea: string;
     community: string;
+    myAccount: string;
   };
   common: {
     lowRisk: string;
@@ -88,6 +89,43 @@ export interface Translations {
     sprayIntro: string;
     sprayWeather: string;
   };
+  myAccount: {
+    signedInAs: string;
+    signOut: string;
+    signInPromptTitle: string;
+    signInPromptBody: string;
+    signInBtn: string;
+    profileHeading: string;
+    myFieldHeading: string;
+    noFieldRegistered: string;
+    fieldDistrict: string;
+    fieldCrop: string;
+    fieldAlerts: string;
+    fieldWeatherNow: string;
+    eastWestAxis: string;
+    west: string;
+    east: string;
+    myAreaRef: string;
+    requestStateAdvisory: string;
+    statusNode: string;
+    nodeWaiting: string;
+    nodeAvistar: string;
+    nodeLocal: string;
+    nodeAggregate: string;
+    nodeSynced: string;
+    nodeSyncedAt: string;
+    resilienceNote: string;
+    dataGovernance: string;
+    firstPartyData: string;
+    perVillageForecast: string;
+    redundancyCloud: string;
+    learningLoop: string;
+    hardCopy: string;
+    seedLabel: string;
+    savedSeeds: string;
+    viewAll: string;
+    continuityNote: string;
+  };
   helpline: {
     ministryName: string;
     number: string;
@@ -108,6 +146,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
       checkCrop: 'Check Crop',
       myArea: 'My Area',
       community: 'Community',
+      myAccount: 'My Account',
     },
     common: {
       lowRisk: 'Low Risk',
@@ -195,6 +234,43 @@ export const TRANSLATIONS: Record<Language, Translations> = {
       sprayIntro: 'Best spraying window: calm early evening when moths start emerging and wind is light (below 10 km/h).',
       sprayWeather: 'Avoid spraying within 12 hours of expected rainfall, and always follow label dilution rates.'
     },
+    myAccount: {
+      signedInAs: 'Signed in as',
+      signOut: 'Sign Out',
+      signInPromptTitle: 'Sign in to your farmer account',
+      signInPromptBody: 'Sign in to see your alerts, registered fields, community activity and saved resources.',
+      signInBtn: 'Sign In',
+      profileHeading: 'My Profile',
+      myFieldHeading: 'My Registered Fields',
+      noFieldRegistered: 'You haven\u2019t registered a field yet. Add your land holding to activate the Field Sentinel early-warning service.',
+      fieldDistrict: 'District',
+      fieldCrop: 'Crop',
+      fieldAlerts: 'Alert Channels',
+      fieldWeatherNow: 'Weather Now',
+      eastWestAxis: 'East-West axis',
+      west: 'West',
+      east: 'East',
+      myAreaRef: 'View My Area',
+      requestStateAdvisory: 'Request State Advisory',
+      statusNode: 'Telemetry Status',
+      nodeWaiting: 'Waiting for field registration…',
+      nodeAvistar: 'AVISTAR',
+      nodeLocal: 'Local Mesh',
+      nodeAggregate: 'Aggregate',
+      nodeSynced: 'Synced',
+      nodeSyncedAt: 'Last sync',
+      resilienceNote: 'The system degrades gracefully — each tool works independently of the others.',
+      dataGovernance: 'Data Governance',
+      firstPartyData: 'First-party data, Fasal Rakshak owns the sample index itself',
+      perVillageForecast: 'Per-village weather forecast for 48 hours',
+      redundancyCloud: 'Multi-regional redundancy on weather, soil and trap sensors',
+      learningLoop: 'Learning loop from your verified reports',
+      hardCopy: 'Hard-copy summary for offline access',
+      seedLabel: 'Certified Seed Directory',
+      savedSeeds: 'Certified seed providers',
+      viewAll: 'View All',
+      continuityNote: 'Continuity, redundancy, and data governance built into every layer.'
+    },
     helpline: {
       ministryName: 'Maharashtra Agriculture Department (Krishi Vibhag)',
       number: '1800-233-4000',
@@ -213,6 +289,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
         checkCrop: 'फसल जांचें',
         myArea: 'मेरा क्षेत्र',
         community: 'किसान समुदाय',
+        myAccount: 'मेरा खाता',
       },
       common: {
         lowRisk: 'कम जोखिम',
@@ -300,6 +377,43 @@ export const TRANSLATIONS: Record<Language, Translations> = {
         sprayIntro: 'सर्वश्रेष्ठ छिड़काव समय: शांत शाम के समय जब पतंगे निकलने लगें और हवा हल्की हो (10 किमी/घंटा से कम)।',
         sprayWeather: 'अपेक्षित बारिश से 12 घंटे पहले छिड़काव न करें, और हमेशा लेबल पर दिए गए घोल अनुपात का पालन करें।'
       },
+      myAccount: {
+        signedInAs: 'इस खाते से साइन इन',
+        signOut: 'साइन आउट',
+        signInPromptTitle: 'किसान खाते में साइन इन करें',
+        signInPromptBody: 'अपने अलर्ट, पंजीकृत खेत, सामुदायिक गतिविधि और सुरक्षित संसाधन देखने के लिए साइन इन करें।',
+        signInBtn: 'साइन इन',
+        profileHeading: 'मेरी प्रोफाइल',
+        myFieldHeading: 'मेरे पंजीकृत खेत',
+        noFieldRegistered: 'आपने अभी तक कोई खेत पंजीकृत नहीं किया है। फील्ड सेंटिनल चेतावनी सेवा सक्रिय करने के लिए अपनी जमीन जोड़ें।',
+        fieldDistrict: 'जिला',
+        fieldCrop: 'फसल',
+        fieldAlerts: 'अलर्ट चैनल',
+        fieldWeatherNow: 'अभी का मौसम',
+        eastWestAxis: 'पूर्व-पश्चिम धुरी',
+        west: 'पश्चिम',
+        east: 'पूर्व',
+        myAreaRef: 'मेरा क्षेत्र देखें',
+        requestStateAdvisory: 'राज्य सलाह मांगें',
+        statusNode: 'टेलीमेट्री स्थिति',
+        nodeWaiting: 'खेत पंजीकरण की प्रतीक्षा…',
+        nodeAvistar: 'एविस्टार',
+        nodeLocal: 'स्थानीय नेटवर्क',
+        nodeAggregate: 'एकत्रित',
+        nodeSynced: 'सिंक हुआ',
+        nodeSyncedAt: 'आखिरी सिंक',
+        resilienceNote: 'सिस्टम बिना किसी रुकावट के काम करता है — हर उपकरण दूसरों से स्वतंत्र है।',
+        dataGovernance: 'डेटा शासन',
+        firstPartyData: 'प्रथम-पक्ष डेटा, फसल रक्षक स्वयं नमूना सूचकांक का मालिक है',
+        perVillageForecast: '48 घंटे का गांव-वार मौसम पूर्वानुमान',
+        redundancyCloud: 'मौसम, मिट्टी और ट्रैप सेंसर पर बहु-क्षेत्रीय रिडंडेंसी',
+        learningLoop: 'आपकी सत्यापित रिपोर्ट से सीखने का चक्र',
+        hardCopy: 'ऑफलाइन पहुंच के लिए प्रिंट सारांश',
+        seedLabel: 'प्रमाणित बीज निर्देशिका',
+        savedSeeds: 'प्रमाणित बीज आपूर्तिकर्ता',
+        viewAll: 'सभी देखें',
+        continuityNote: 'हर परत में निरंतरता, रिडंडेंसी और डेटा शासन निर्मित।'
+      },
       helpline: {
         ministryName: 'महाराष्ट्र कृषि विभाग (कृषि मंत्रालय)',
         number: '1800-233-4000',
@@ -318,6 +432,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
         checkCrop: 'पीक तपासा',
         myArea: 'माझा परिसर',
         community: 'शेतकरी समुदाय',
+        myAccount: 'माझे खाते',
       },
       common: {
         lowRisk: 'कमी धोका',
@@ -404,6 +519,43 @@ export const TRANSLATIONS: Record<Language, Translations> = {
         helplineNote: 'तत्काळ सल्ल्यासाठी महाराष्ट्र कृषी हेल्पलाइनवर कॉल करा: 1800-233-4000',
         sprayIntro: 'सर्वोत्तम फवारणी वेळ: शांत सायंकाळी जेव्हा पतंग बाहेर येऊ लागतात आणि वारा हलका असतो (१० किमी/तासांपेक्षा कमी).',
         sprayWeather: 'अपेक्षित पावसाच्या १२ तासांपूर्वी फवारणी टाळा आणि नेहमी लेबलवर दिलेल्या घनतेचे पालन करा.'
+      },
+      myAccount: {
+        signedInAs: 'याच खात्याने साइन इन केले आहे',
+        signOut: 'साइन आउट',
+        signInPromptTitle: 'तुमच्या शेतकरी खात्यात प्रवेश करा',
+        signInPromptBody: 'तुमचे अलर्ट, नोंदणी केलेली शेते, समुदायातील हालचाली आणि सुरक्षित संसाधने पाहण्यासाठी साइन इन करा.',
+        signInBtn: 'साइन इन',
+        profileHeading: 'माझे प्रोफाइल',
+        myFieldHeading: 'माझी नोंदणीकृत शेते',
+        noFieldRegistered: 'तुम्ही अजून शेताची नोंदणी केलेली नाही. फील्ड सेंटिनल इअर्ली-वॉर्निंग सेवा सुरू करण्यासाठी तुमची जमीन जोडा.',
+        fieldDistrict: 'जिल्हा',
+        fieldCrop: 'पीक',
+        fieldAlerts: 'अलर्ट चॅनेल',
+        fieldWeatherNow: 'आत्ताचे हवामान',
+        eastWestAxis: 'पूर्व-पश्चिम अक्ष',
+        west: 'पश्चिम',
+        east: 'पूर्व',
+        myAreaRef: 'माझा परिसर पहा',
+        requestStateAdvisory: 'राज्य सल्ला मागवा',
+        statusNode: 'टेलीमेट्री स्थिती',
+        nodeWaiting: 'शेत नोंदणीची प्रतीक्षा…',
+        nodeAvistar: 'AVISTAR',
+        nodeLocal: 'स्थानिक नेटवर्क',
+        nodeAggregate: 'एकत्रित',
+        nodeSynced: 'सिंक झाले',
+        nodeSyncedAt: 'शेवटचे सिंक',
+        resilienceNote: 'सिस्टीम कोणत्याही व्यत्ययाशिवाय काम करते — प्रत्येक साधन दुसऱ्यापासून स्वतंत्र आहे.',
+        dataGovernance: 'डेटा गव्हर्नन्स',
+        firstPartyData: 'फर्स्ट-पार्टी डेटा, नमुना निर्देशांक फसल रक्षककडेच असतो',
+        perVillageForecast: '४८ तासांचा गावनिहाय हवामान अंदाज',
+        redundancyCloud: 'हवामान, माती व सापळा सेन्सरवर मल्टी-रीजनल रिडंडन्सी',
+        learningLoop: 'तुमच्या पडताळणी झालेल्या नोंदींवरून शिकण्याची प्रक्रिया',
+        hardCopy: 'ऑफलाइन वापरासाठी छापील सारांश',
+        seedLabel: 'प्रमाणित बियाणे निर्देशिका',
+        savedSeeds: 'प्रमाणित बियाणे पुरवठादार',
+        viewAll: 'सर्व पहा',
+        continuityNote: 'प्रत्येक थरात निरंतरता, रिडंडन्सी आणि डेटा गव्हर्नन्स समाविष्ट.'
       },
       helpline: {
         ministryName: 'महाराष्ट्र शासन कृषी विभाग (मंत्रालय)',

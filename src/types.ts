@@ -1,4 +1,4 @@
-export type ActiveScreen = 'home' | 'check-crop' | 'my-area' | 'how-it-works' | 'community';
+export type ActiveScreen = 'home' | 'check-crop' | 'my-area' | 'how-it-works' | 'community' | 'my-account';
 
 export type Language = 'en' | 'hi' | 'mr';
 

@@ -55,6 +55,13 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, lang }) => {
             >
               {tNav.community}
             </button>
+            <button
+              id="footer-nav-my-account"
+              onClick={() => onNavigate('my-account')}
+              className="font-sans-brand text-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer"
+            >
+              {tNav.myAccount}
+            </button>
           </nav>
         </div>
 
