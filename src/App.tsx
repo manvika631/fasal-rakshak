@@ -19,6 +19,7 @@ import { CommunityScreen } from './components/CommunityScreen';
 import { AuthModal } from './components/AuthModal';
 import { FieldSentinelModal } from './components/FieldSentinelModal';
 import { ReportObservationModal } from './components/ReportObservationModal';
+import { AskExpertWidget } from './components/AskExpertWidget';
 
 export default function App() {
   const getInitialScreen = (): ActiveScreen => {
@@ -183,6 +184,9 @@ export default function App() {
 
       {/* Footer */}
       <Footer onNavigate={handleNavigate} lang={lang} />
+
+      {/* Floating "Ask Expert" chat widget — Home page only */}
+      <AskExpertWidget lang={lang} visible={activeScreen === 'home'} />
 
       {/* Farmer Auth Modal */}
       <AuthModal

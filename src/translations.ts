@@ -63,6 +63,31 @@ export interface Translations {
       detail: string;
     };
   };
+  askExpert: {
+    collapsedLabel: string;
+    panelTitle: string;
+    panelSubtitle: string;
+    close: string;
+    welcome: string;
+    quickReplies: string[];
+    inputPlaceholder: string;
+    send: string;
+    listening: string;
+    voiceUnsupported: string;
+    typingAi: string;
+    typingExpert: string;
+    aiBadge: string;
+    expertBadge: string;
+    forwardedChip: string;
+    forwardedNote: string;
+    expertReply: string;
+    thresholdLabel: string;
+    firstStepLabel: string;
+    escalateLabel: string;
+    helplineNote: string;
+    sprayIntro: string;
+    sprayWeather: string;
+  };
   helpline: {
     ministryName: string;
     number: string;
@@ -140,6 +165,36 @@ export const TRANSLATIONS: Record<Language, Translations> = {
         detail: '1.5km away, reported 4 hours ago'
       }
     },
+    askExpert: {
+      collapsedLabel: 'Ask Expert',
+      panelTitle: 'Ask an Expert',
+      panelSubtitle: 'Simple questions answered instantly. Anything harder reaches a real expert within 24 hours.',
+      close: 'Close chat',
+      welcome: 'Hi, I\u2019m the Fasal Rakshak assistant. Ask me about a symptom or pest you\u2019re seeing. If I can\u2019t help, I\u2019ll forward you to a human expert.',
+      quickReplies: [
+        'My cotton has spots',
+        'When should I spray?',
+        'Rosette flowers in my cotton',
+        'Report an outbreak'
+      ],
+      inputPlaceholder: 'Type your question here…',
+      send: 'Send Message',
+      listening: 'Listening…',
+      voiceUnsupported: 'Voice input isn\u2019t supported in this browser.',
+      typingAi: 'Consulting field advisories…',
+      typingExpert: 'Forwarding to an agronomist…',
+      aiBadge: 'AI Answer',
+      expertBadge: 'Expert Answer',
+      forwardedChip: 'Forwarded to an expert — reply within 24 hours.',
+      forwardedNote: 'You\u2019ll be notified here when they respond.',
+      expertReply: 'Thanks, we\u2019ve received your message. An agronomist is reviewing your case and will reply here within 24 hours with a locally adapted plan.',
+      thresholdLabel: 'Threshold',
+      firstStepLabel: 'First step',
+      escalateLabel: 'If ETL is breached',
+      helplineNote: 'For immediate agronomist guidance, call Maharashtra Agriculture Helpline: 1800-233-4000',
+      sprayIntro: 'Best spraying window: calm early evening when moths start emerging and wind is light (below 10 km/h).',
+      sprayWeather: 'Avoid spraying within 12 hours of expected rainfall, and always follow label dilution rates.'
+    },
     helpline: {
       ministryName: 'Maharashtra Agriculture Department (Krishi Vibhag)',
       number: '1800-233-4000',
@@ -215,6 +270,36 @@ export const TRANSLATIONS: Record<Language, Translations> = {
           detail: '1.5 किमी दूर, 4 घंटे पहले दर्ज'
         }
       },
+      askExpert: {
+        collapsedLabel: 'विशेषज्ञ से पूछें',
+        panelTitle: 'विशेषज्ञ से पूछें',
+        panelSubtitle: 'आसान सवालों के जवाब तुरंत मिलते हैं। मुश्किल मामलों में 24 घंटे के भीतर असली विशेषज्ञ मदद करेगा।',
+        close: 'चैट बंद करें',
+        welcome: 'नमस्ते, मैं फसल रक्षक सहायक हूं। अपने खेत में दिख रहे लक्षण या कीट के बारे में पूछें। अगर मैं मदद न कर पाऊं, तो आपको एक विशेषज्ञ से जोड़ दूंगा।',
+        quickReplies: [
+          'मेरे कपास पर धब्बे हैं',
+          'मुझे छिड़काव कब करना चाहिए?',
+          'कपास के फूल में गुलाबी सुंडी',
+          'प्रकोप की रिपोर्ट करें'
+        ],
+        inputPlaceholder: 'अपना सवाल यहां लिखें…',
+        send: 'संदेश भेजें',
+        listening: 'सुन रहा हूं…',
+        voiceUnsupported: 'इस ब्राउज़र में वॉइस इनपुट समर्थित नहीं है।',
+        typingAi: 'खेत सलाह देख रहे हैं…',
+        typingExpert: 'कृषि विशेषज्ञ को भेजा जा रहा है…',
+        aiBadge: 'AI उत्तर',
+        expertBadge: 'विशेषज्ञ उत्तर',
+        forwardedChip: 'विशेषज्ञ को भेज दिया गया — 24 घंटे में उत्तर मिलेगा।',
+        forwardedNote: 'जवाब मिलते ही आपको यहां सूचित किया जाएगा।',
+        expertReply: 'धन्यवाद, आपका संदेश मिल गया है। एक कृषि विशेषज्ञ आपके मामले की समीक्षा कर रहे हैं और 24 घंटे के भीतर यहीं पर आपके क्षेत्र के लिए उपयुक्त योजना बताएंगे।',
+        thresholdLabel: 'सीमा (ETL)',
+        firstStepLabel: 'पहला कदम',
+        escalateLabel: 'यदि ETL पार हो जाए',
+        helplineNote: 'तत्काल सलाह के लिए महाराष्ट्र कृषि हेल्पलाइन पर कॉल करें: 1800-233-4000',
+        sprayIntro: 'सर्वश्रेष्ठ छिड़काव समय: शांत शाम के समय जब पतंगे निकलने लगें और हवा हल्की हो (10 किमी/घंटा से कम)।',
+        sprayWeather: 'अपेक्षित बारिश से 12 घंटे पहले छिड़काव न करें, और हमेशा लेबल पर दिए गए घोल अनुपात का पालन करें।'
+      },
       helpline: {
         ministryName: 'महाराष्ट्र कृषि विभाग (कृषि मंत्रालय)',
         number: '1800-233-4000',
@@ -289,6 +374,36 @@ export const TRANSLATIONS: Record<Language, Translations> = {
           issue: 'अल्टरनेरिया पानांवरील ठिपके धोका',
           detail: '1.5 किमी अंतरावर, 4 तासांपूर्वी नोंदवले'
         }
+      },
+      askExpert: {
+        collapsedLabel: 'तज्ज्ञांना विचारा',
+        panelTitle: 'तज्ज्ञांना विचारा',
+        panelSubtitle: 'सोप्या प्रश्नांची उत्तरे त्वरित मिळतात. गुंतागुंतीच्या प्रश्नांसाठी २४ तासांत खरा तज्ज्ञ उत्तर देईल.',
+        close: 'चॅट बंद करा',
+        welcome: 'नमस्कार, मी फसल रक्षक सहाय्यक. तुमच्या शेतात दिसत असलेल्या लक्षणांबद्दल किंवा किडीबद्दल विचारा. मी मदत करू शकलो नाही तर तज्ज्ञाकडे वळवू. तुम्हाला एका तज्ज्ञाशी जोडू.',
+        quickReplies: [
+          'माझ्या कापसावर ठिपके आहेत',
+          'फवारणी कधी करावी?',
+          'कापसावर गुलाबी बोंडअळी',
+          'प्रादुर्भावाची नोंद करा'
+        ],
+        inputPlaceholder: 'तुमचा प्रश्न येथे लिहा…',
+        send: 'संदेश पाठवा',
+        listening: 'ऐकत आहे…',
+        voiceUnsupported: 'या ब्राउझरमध्ये व्हॉइस इनपुट समर्थित नाही.',
+        typingAi: 'शेतातील सल्ले तपासत आहे…',
+        typingExpert: 'कृषी तज्ज्ञाकडे पाठवत आहे…',
+        aiBadge: 'AI उत्तर',
+        expertBadge: 'तज्ज्ञ उत्तर',
+        forwardedChip: 'तज्ज्ञाकडे पाठवले — २४ तासांत उत्तर मिळेल.',
+        forwardedNote: 'उत्तर आल्यावर तुम्हाला येथेच कळवले जाईल.',
+        expertReply: 'धन्यवाद, तुमचा संदेश मिळाला आहे. एक कृषी तज्ज्ञ तुमच्या प्रकरणाचे पुनरावलोकन करत आहे आणि २४ तासांत येथेच स्थानिक उपयोगी योजना सांगेल.',
+        thresholdLabel: 'मर्यादा (ETL)',
+        firstStepLabel: 'पहिली पायरी',
+        escalateLabel: 'ETL पार झाल्यास',
+        helplineNote: 'तत्काळ सल्ल्यासाठी महाराष्ट्र कृषी हेल्पलाइनवर कॉल करा: 1800-233-4000',
+        sprayIntro: 'सर्वोत्तम फवारणी वेळ: शांत सायंकाळी जेव्हा पतंग बाहेर येऊ लागतात आणि वारा हलका असतो (१० किमी/तासांपेक्षा कमी).',
+        sprayWeather: 'अपेक्षित पावसाच्या १२ तासांपूर्वी फवारणी टाळा आणि नेहमी लेबलवर दिलेल्या घनतेचे पालन करा.'
       },
       helpline: {
         ministryName: 'महाराष्ट्र शासन कृषी विभाग (मंत्रालय)',
